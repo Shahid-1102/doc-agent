@@ -37,3 +37,10 @@ dev = [
     "pytest==9.1.1",
     "ruff==0.17.2",
 ]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+markers = [
+    "integration: tests that require live Supabase and OpenAI credentials",
+]
