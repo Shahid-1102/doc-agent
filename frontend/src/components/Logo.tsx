@@ -8,11 +8,11 @@ export function LogoMark({ className }: LogoProps) {
   return (
     <span
       className={cn(
-        'flex size-8 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-black p-1.5',
+        'flex size-10 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-white p-1.5',
         className,
       )}
     >
-      <img src="/log.png" alt="" className="size-full object-contain" />
+      <img src="/robot.svg" alt="" className="size-full object-contain" />
     </span>
   )
 }
