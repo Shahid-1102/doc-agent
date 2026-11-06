@@ -23,6 +23,11 @@ dependencies = [
     "uvicorn==0.54.0",
 ]
 
+[project.optional-dependencies]
+ingest = [
+    "docling==2.145.0",
+]
+
 [tool.hatch.build.targets.wheel]
 packages = ["app"]
 
@@ -32,7 +37,6 @@ exclude-newer = "7 days"
 
 [dependency-groups]
 dev = [
-    "docling==2.145.0",
     "ipykernel==7.4.0",
     "pytest==9.1.1",
     "ruff==0.17.2",
